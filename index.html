@@ -370,7 +370,7 @@ body{background:var(--warm-white);color:var(--ink);font-family:'Jost',sans-serif
     <p style="color:var(--mid);font-size:0.87rem;max-width:560px;">Tap any title to explore placement options, audience data, and your commission. The ecosystem is built for cross-title upselling — one relationship can span multiple placements.</p>
     <div class="titles-accordion">
       <div class="acc-item">
-        <div class="acc-header" onclick="toggleAcc(this)">
+        <div class="acc-header">
           <span class="acc-tag">Flippable Digital · 12 Issues</span>
           <span class="acc-name">Portfolio.YVR</span>
           <span class="acc-price">$500 – $2,500</span>
@@ -391,7 +391,7 @@ body{background:var(--warm-white);color:var(--ink);font-family:'Jost',sans-serif
         </div>
       </div>
       <div class="acc-item">
-        <div class="acc-header" onclick="toggleAcc(this)">
+        <div class="acc-header">
           <span class="acc-tag">Flippable Digital · 8 Issues</span>
           <span class="acc-name">Folio.YVR Luxury Lifestyle Magazine</span>
           <span class="acc-price">$500 – $2,500</span>
@@ -411,7 +411,7 @@ body{background:var(--warm-white);color:var(--ink);font-family:'Jost',sans-serif
         </div>
       </div>
       <div class="acc-item">
-        <div class="acc-header" onclick="toggleAcc(this)">
+        <div class="acc-header">
           <span class="acc-tag">Digital Series · Continuous</span>
           <span class="acc-name">FolioYVR.com &amp; PortfolioYVR.com</span>
           <span class="acc-price">$750 – $1,500 / story</span>
@@ -430,7 +430,7 @@ body{background:var(--warm-white);color:var(--ink);font-family:'Jost',sans-serif
         </div>
       </div>
       <div class="acc-item">
-        <div class="acc-header" onclick="toggleAcc(this)">
+        <div class="acc-header">
           <span class="acc-tag">Print + Digital · Bi-Monthly</span>
           <span class="acc-name">LIV Magazine</span>
           <span class="acc-price">From $975 editorial · $900 print</span>
@@ -449,7 +449,7 @@ body{background:var(--warm-white);color:var(--ink);font-family:'Jost',sans-serif
         </div>
       </div>
       <div class="acc-item">
-        <div class="acc-header" onclick="toggleAcc(this)">
+        <div class="acc-header">
           <span class="acc-tag">National · Media Brokered</span>
           <span class="acc-name">Retail-Insider.com</span>
           <span class="acc-price">$750 per story</span>
@@ -468,7 +468,7 @@ body{background:var(--warm-white);color:var(--ink);font-family:'Jost',sans-serif
         </div>
       </div>
       <div class="acc-item">
-        <div class="acc-header" onclick="toggleAcc(this)">
+        <div class="acc-header">
           <span class="acc-tag">Multicultural · National</span>
           <span class="acc-name">UrbanAsian.com</span>
           <span class="acc-price">$500 placement fee</span>
@@ -521,7 +521,7 @@ body{background:var(--warm-white);color:var(--ink);font-family:'Jost',sans-serif
       </table>
     </div>
   </div>
-  <button class="table-toggle-btn" id="table-toggle" onclick="toggleTable()">
+  <button class="table-toggle-btn" id="table-toggle">
     <span id="table-toggle-text">View Monthly Breakdown</span>
     <span id="table-toggle-icon">↓</span>
   </button>
@@ -580,23 +580,23 @@ body{background:var(--warm-white);color:var(--ink);font-family:'Jost',sans-serif
         </div>
         <div class="calc-control">
           <div class="calc-control-label">Portfolio.YVR closes per month<span id="port-val">5</span></div>
-          <input type="range" class="calc-range" id="port-closes" min="0" max="14" value="5" oninput="updateCalc()">
+          <input type="range" class="calc-range" id="port-closes" min="0" max="14" value="5">
         </div>
         <div class="calc-control">
           <div class="calc-control-label">Folio.YVR closes per month<span id="folio-val">3</span></div>
-          <input type="range" class="calc-range" id="folio-closes" min="0" max="5" value="3" oninput="updateCalc()">
+          <input type="range" class="calc-range" id="folio-closes" min="0" max="5" value="3">
         </div>
         <div class="calc-control">
           <div class="calc-control-label">Website stories per month (both sites)<span id="web-val">10</span></div>
-          <input type="range" class="calc-range" id="web-stories" min="0" max="40" value="10" oninput="updateCalc()">
+          <input type="range" class="calc-range" id="web-stories" min="0" max="40" value="10">
         </div>
         <div class="calc-control">
           <div class="calc-control-label">Brokered placements per month<span id="broker-val">2</span></div>
-          <input type="range" class="calc-range" id="broker-places" min="0" max="10" value="2" oninput="updateCalc()">
+          <input type="range" class="calc-range" id="broker-places" min="0" max="10" value="2">
         </div>
         <div class="calc-control">
           <div class="calc-control-label">Special Editions per year<span id="special-val">1</span></div>
-          <input type="range" class="calc-range" id="special-eds" min="0" max="6" value="1" oninput="updateCalc()">
+          <input type="range" class="calc-range" id="special-eds" min="0" max="6" value="1">
         </div>
       </div>
       <div>
@@ -627,49 +627,49 @@ body{background:var(--warm-white);color:var(--ink);font-family:'Jost',sans-serif
   <h2 class="section-title">The 7-Day<br><em>Sales Rhythm</em></h2>
   <div class="section-body"><p>Success follows a structured weekly cadence — not improvised hustle. Tap each day to expand the full activity list. Each day has a clear primary goal, defined activities, and measurable outputs.</p></div>
   <div class="rhythm-timeline">
-    <div class="rhythm-day" onclick="toggleDay(this)">
+    <div class="rhythm-day">
       <div class="rhythm-day-num"><div class="rhythm-day-circle">1</div><div class="rhythm-day-line"></div></div>
       <div class="rhythm-day-content">
         <div class="rhythm-day-header"><div><div class="rhythm-day-title">Lead Generation + First Pitch Outbound</div><div class="rhythm-day-goal">Primary Goal: Fill the pipeline</div></div><span class="rhythm-expand-hint">Tap to expand</span></div>
         <ul class="rhythm-day-activities"><li>Identify 25–30 new leads from Instagram followers, LinkedIn connections and engagers</li><li>Vet suitability and add qualified prospects to the Sales Spreadsheet</li><li>Send 15–20 first-touch pitches across LinkedIn, IG DM, or email</li><li>Organize all prospects by warm, hot, or nurture status</li></ul>
       </div>
     </div>
-    <div class="rhythm-day" onclick="toggleDay(this)">
+    <div class="rhythm-day">
       <div class="rhythm-day-num"><div class="rhythm-day-circle">2</div><div class="rhythm-day-line"></div></div>
       <div class="rhythm-day-content">
         <div class="rhythm-day-header"><div><div class="rhythm-day-title">Follow-Ups + Social Engagement</div><div class="rhythm-day-goal">Primary Goal: Convert silent viewers into conversations</div></div><span class="rhythm-expand-hint">Tap to expand</span></div>
         <ul class="rhythm-day-activities"><li>Touchpoint #2 to all who viewed but did not reply</li><li>Light social touches — IG Story likes, LinkedIn post reactions</li><li>Respond to all active conversations; log new warm leads</li></ul>
       </div>
     </div>
-    <div class="rhythm-day" onclick="toggleDay(this)">
+    <div class="rhythm-day">
       <div class="rhythm-day-num"><div class="rhythm-day-circle">3</div><div class="rhythm-day-line"></div></div>
       <div class="rhythm-day-content">
         <div class="rhythm-day-header"><div><div class="rhythm-day-title">Value Add + Proof of Concept</div><div class="rhythm-day-goal">Primary Goal: Move from "interested" to "motivated"</div></div><span class="rhythm-expand-hint">Tap to expand</span></div>
         <ul class="rhythm-day-activities"><li>Touchpoint #3 — published story examples, issue links, industry insights</li><li>Share example layouts to help prospects visualize their placement</li><li>Update spreadsheet with stage movement and notes</li></ul>
       </div>
     </div>
-    <div class="rhythm-day" onclick="toggleDay(this)">
+    <div class="rhythm-day">
       <div class="rhythm-day-num"><div class="rhythm-day-circle">4</div><div class="rhythm-day-line"></div></div>
       <div class="rhythm-day-content">
         <div class="rhythm-day-header"><div><div class="rhythm-day-title">Heavy Follow-Up + Referral Outreach</div><div class="rhythm-day-goal">Primary Goal: Push leads toward decision-making</div></div><span class="rhythm-expand-hint">Tap to expand</span></div>
         <ul class="rhythm-day-activities"><li>Touchpoint #4 to all engaged but uncommitted prospects</li><li>Reach out to past participants for referrals — highest close rate in the system</li><li>Offer referral fee or charitable donation option for legacy contacts</li><li>Book discovery calls for Days 5 and 6</li></ul>
       </div>
     </div>
-    <div class="rhythm-day" onclick="toggleDay(this)">
+    <div class="rhythm-day">
       <div class="rhythm-day-num"><div class="rhythm-day-circle">5</div><div class="rhythm-day-line"></div></div>
       <div class="rhythm-day-content">
         <div class="rhythm-day-header"><div><div class="rhythm-day-title">Conversion Calls</div><div class="rhythm-day-goal">Primary Goal: Close warm and hot leads</div></div><span class="rhythm-expand-hint">Tap to expand</span></div>
         <ul class="rhythm-day-activities"><li>Conduct 10–15 minute discovery Zooms or calls</li><li>Present Snapshot, QuickTake, Journey Story, or Special Edition options</li><li>Close same-day where possible; send recap emails and payment links</li></ul>
       </div>
     </div>
-    <div class="rhythm-day" onclick="toggleDay(this)">
+    <div class="rhythm-day">
       <div class="rhythm-day-num"><div class="rhythm-day-circle">6</div><div class="rhythm-day-line"></div></div>
       <div class="rhythm-day-content">
         <div class="rhythm-day-header"><div><div class="rhythm-day-title">Final Follow-Up + Objection Handling</div><div class="rhythm-day-goal">Primary Goal: Convert remaining warm leads before they cool</div></div><span class="rhythm-expand-hint">Tap to expand</span></div>
         <ul class="rhythm-day-activities"><li>Touchpoint #5 or #6 depending on cycle stage</li><li>"I have one space remaining before layout — shall I hold it for you?"</li><li>Address objections: timing, budget, decision partners</li><li>Offer 48-hour space hold, referral fee, or charity donation when appropriate</li></ul>
       </div>
     </div>
-    <div class="rhythm-day" onclick="toggleDay(this)">
+    <div class="rhythm-day">
       <div class="rhythm-day-num"><div class="rhythm-day-circle">7</div></div>
       <div class="rhythm-day-content">
         <div class="rhythm-day-header"><div><div class="rhythm-day-title">Pipeline Hygiene + Weekly Reset</div><div class="rhythm-day-goal">Primary Goal: Set up a strong Monday launch</div></div><span class="rhythm-expand-hint">Tap to expand</span></div>
@@ -697,11 +697,11 @@ body{background:var(--warm-white);color:var(--ink);font-family:'Jost',sans-serif
   <h2 class="section-title">Three hours.<br><em>Structured for results.</em></h2>
   <div class="section-body"><p>The core daily work block is designed for maximum outreach impact in a focused, sequenced session. Each block feeds directly into the 7-Day Rhythm. Select a time block below to see the full breakdown.</p></div>
   <div class="schedule-tabs">
-    <button class="sched-tab active" onclick="switchSched(this,'s1')">0:00–0:30</button>
-    <button class="sched-tab" onclick="switchSched(this,'s2')">0:30–0:45</button>
-    <button class="sched-tab" onclick="switchSched(this,'s3')">0:45–1:45</button>
-    <button class="sched-tab" onclick="switchSched(this,'s4')">1:45–2:15</button>
-    <button class="sched-tab" onclick="switchSched(this,'s5')">2:15–3:00</button>
+    <button class="sched-tab active" data-panel="s1">0:00–0:30</button>
+    <button class="sched-tab" data-panel="s2">0:30–0:45</button>
+    <button class="sched-tab" data-panel="s3">0:45–1:45</button>
+    <button class="sched-tab" data-panel="s4">1:45–2:15</button>
+    <button class="sched-tab" data-panel="s5">2:15–3:00</button>
   </div>
   <div class="schedule-panels">
     <div class="sched-panel active" id="s1">
@@ -734,10 +734,10 @@ body{background:var(--warm-white);color:var(--ink);font-family:'Jost',sans-serif
     <h2 class="section-title">Pitch templates<br><em>that open doors</em></h2>
     <p style="color:var(--mid);font-size:0.87rem;max-width:540px;">Proven pitch frameworks are provided for every channel. Built around ELL Comms's editorial identity and the specific value each platform delivers.</p>
     <div class="pitch-tabs">
-      <button class="pitch-tab active" onclick="switchPitch(this,'p1')">LinkedIn DM</button>
-      <button class="pitch-tab" onclick="switchPitch(this,'p2')">Instagram · Portfolio.YVR</button>
-      <button class="pitch-tab" onclick="switchPitch(this,'p3')">Instagram · Folio.YVR</button>
-      <button class="pitch-tab" onclick="switchPitch(this,'p4')">Email · Hospitality</button>
+      <button class="pitch-tab active" data-panel="p1">LinkedIn DM</button>
+      <button class="pitch-tab" data-panel="p2">Instagram · Portfolio.YVR</button>
+      <button class="pitch-tab" data-panel="p3">Instagram · Folio.YVR</button>
+      <button class="pitch-tab" data-panel="p4">Email · Hospitality</button>
     </div>
     <div class="pitch-panels">
       <div class="pitch-panel active" id="p1">
@@ -781,146 +781,209 @@ body{background:var(--warm-white);color:var(--ink);font-family:'Jost',sans-serif
   <h2 class="cta-title">Ready to be part<br>of <em>the story?</em></h2>
   <p class="cta-sub">EcoLuxLuv Communications &amp; Marketing Inc. · Vancouver, BC</p>
   <div class="cta-contact">
-    <div class="cta-contact-item"><span class="cta-contact-label">Email</span><a href="/cdn-cgi/l/email-protection#97fff2fbf2f9d7f2f4f8fbe2effbe2e1b9f4f8fa" class="cta-contact-value"><span class="__cf_email__" data-cfemail="6109040d040f2104020e0d14190d14174f020e0c">[email&#160;protected]</span></a></div>
+    <div class="cta-contact-item"><span class="cta-contact-label">Email</span><a href="mailto:helen@ecoluxluv.com" class="cta-contact-value">helen@ecoluxluv.com</a></div>
     <div class="cta-contact-item"><span class="cta-contact-label">Phone / WhatsApp</span><span class="cta-contact-value">778.847.3011</span></div>
     <div class="cta-contact-item"><span class="cta-contact-label">Portfolio.YVR</span><a href="https://portfolioyvr.com" target="_blank" class="cta-contact-value">portfolioyvr.com</a></div>
     <div class="cta-contact-item"><span class="cta-contact-label">Folio.YVR</span><a href="https://folioyvr.com" target="_blank" class="cta-contact-value">folioyvr.com</a></div>
   </div>
 </section>
 
-<button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top"></button>
+<button id="back-top" aria-label="Back to top"></button>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-// NAV SCROLL
-let lastY=0;
-window.addEventListener('scroll',()=>{
-  const y=window.scrollY;
-  const nav=document.getElementById('nav');
-  const tabs=document.getElementById('sticky-tabs');
-  const navH=nav.offsetHeight;
-  if(y>200&&y>lastY+5){
-    nav.classList.add('hidden');
-    tabs.style.top='0';
-    document.getElementById('tabs-spacer').style.height='47px';
-  } else if(y<lastY-5||y<200){
-    nav.classList.remove('hidden');
-    tabs.style.top=navH+'px';
-    document.getElementById('tabs-spacer').style.height='111px';
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+
+  // NAV SCROLL
+  var lastY = 0;
+  window.addEventListener('scroll', function() {
+    var y = window.scrollY;
+    var nav = document.getElementById('nav');
+    var tabs = document.getElementById('sticky-tabs');
+    var spacer = document.getElementById('tabs-spacer');
+    if (y > 200 && y > lastY + 5) {
+      nav.classList.add('hidden');
+      if (tabs) tabs.style.top = '0';
+      if (spacer) spacer.style.height = '47px';
+    } else if (y < lastY - 5 || y < 200) {
+      nav.classList.remove('hidden');
+      if (tabs) tabs.style.top = nav.offsetHeight + 'px';
+      if (spacer) spacer.style.height = '111px';
+    }
+    lastY = y;
+    var btn = document.getElementById('back-top');
+    if (btn) btn.classList.toggle('visible', y > 600);
+    updateActiveTabs();
+  });
+
+  // Init tabs position
+  var initTabs = document.getElementById('sticky-tabs');
+  var initNav = document.getElementById('nav');
+  if (initTabs && initNav) initTabs.style.top = initNav.offsetHeight + 'px';
+
+  // HAMBURGER
+  var hamburger = document.getElementById('hamburger');
+  var mobileMenu = document.getElementById('mobile-menu');
+  if (hamburger && mobileMenu) {
+    hamburger.addEventListener('click', function() {
+      hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open');
+    });
+    document.querySelectorAll('.nav-mobile-link, .nav-mobile-cta').forEach(function(l) {
+      l.addEventListener('click', function() {
+        hamburger.classList.remove('open');
+        mobileMenu.classList.remove('open');
+      });
+    });
   }
-  lastY=y;
-  document.getElementById('back-top').classList.toggle('visible',y>600);
-  updateActiveTabs();
-});
 
-// INIT TABS POSITION
-(function(){
-  const tabs=document.getElementById('sticky-tabs');
-  const nav=document.getElementById('nav');
-  tabs.style.top=nav.offsetHeight+'px';
-})();
+  // STICKY TAB NAVIGATION
+  var sectionIds = ['overview','titles','earnings','calculator','rhythm','schedule','pitches','contact'];
 
-// HAMBURGER
-document.getElementById('hamburger').addEventListener('click',function(){
-  this.classList.toggle('open');
-  document.getElementById('mobile-menu').classList.toggle('open');
-});
-document.querySelectorAll('.nav-mobile-link,.nav-mobile-cta').forEach(l=>{
-  l.addEventListener('click',()=>{
-    document.getElementById('hamburger').classList.remove('open');
-    document.getElementById('mobile-menu').classList.remove('open');
+  function updateActiveTabs() {
+    var scrollY = window.scrollY + 130;
+    var active = 'overview';
+    sectionIds.forEach(function(id) {
+      var el = document.getElementById(id);
+      if (el && el.offsetTop <= scrollY) active = id;
+    });
+    document.querySelectorAll('.nav-link').forEach(function(l) {
+      l.classList.toggle('active', l.getAttribute('href') === '#' + active);
+    });
+    document.querySelectorAll('.sticky-tab').forEach(function(t) {
+      t.classList.toggle('active', t.getAttribute('data-target') === active);
+    });
+  }
+
+  document.querySelectorAll('.sticky-tab').forEach(function(t) {
+    t.addEventListener('click', function() {
+      var el = document.getElementById(t.getAttribute('data-target'));
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    });
   });
-});
 
-// ACTIVE TABS
-const sections=['overview','titles','earnings','calculator','rhythm','schedule','pitches','contact'];
-function updateActiveTabs(){
-  const scrollY=window.scrollY+130;
-  let active='overview';
-  sections.forEach(id=>{const el=document.getElementById(id);if(el&&el.offsetTop<=scrollY)active=id;});
-  document.querySelectorAll('.nav-link').forEach(l=>l.classList.toggle('active',l.getAttribute('href')==='#'+active));
-  document.querySelectorAll('.sticky-tab').forEach(t=>t.classList.toggle('active',t.getAttribute('data-target')===active));
-}
-document.querySelectorAll('.sticky-tab').forEach(t=>{
-  t.addEventListener('click',()=>{
-    const el=document.getElementById(t.getAttribute('data-target'));
-    if(el)el.scrollIntoView({behavior:'smooth'});
+  // BACK TO TOP
+  var backTop = document.getElementById('back-top');
+  if (backTop) {
+    backTop.addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  // ACCORDION
+  document.querySelectorAll('.acc-header').forEach(function(header) {
+    header.addEventListener('click', function() {
+      var body = header.nextElementSibling;
+      var isOpen = header.classList.contains('open');
+      document.querySelectorAll('.acc-header').forEach(function(h) {
+        h.classList.remove('open');
+        if (h.nextElementSibling) h.nextElementSibling.style.maxHeight = null;
+      });
+      if (!isOpen) {
+        header.classList.add('open');
+        body.style.maxHeight = body.scrollHeight + 'px';
+      }
+    });
   });
-});
 
-// reveal animations disabled
+  // TABLE TOGGLE
+  var tableToggleBtn = document.getElementById('table-toggle');
+  if (tableToggleBtn) {
+    tableToggleBtn.addEventListener('click', function() {
+      var c = document.getElementById('table-container');
+      var vis = c.style.display !== 'none';
+      c.style.display = vis ? 'none' : 'block';
+      document.getElementById('table-toggle-text').textContent = vis ? 'View Monthly Breakdown' : 'Hide Breakdown';
+      document.getElementById('table-toggle-icon').textContent = vis ? '↓' : '↑';
+      if (!vis) setTimeout(function() { c.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }, 50);
+    });
+  }
 
-// ACCORDION
-function toggleAcc(header){
-  const body=header.nextElementSibling;
-  const isOpen=header.classList.contains('open');
-  document.querySelectorAll('.acc-header').forEach(h=>{h.classList.remove('open');h.nextElementSibling.style.maxHeight=null;});
-  if(!isOpen){header.classList.add('open');body.style.maxHeight=body.scrollHeight+'px';}
-}
-
-// TABLE TOGGLE
-function toggleTable(){
-  const c=document.getElementById('table-container');
-  const vis=c.style.display!=='none';
-  c.style.display=vis?'none':'block';
-  document.getElementById('table-toggle-text').textContent=vis?'View Monthly Breakdown':'Hide Breakdown';
-  document.getElementById('table-toggle-icon').textContent=vis?'↓':'↑';
-  if(!vis)setTimeout(()=>c.scrollIntoView({behavior:'smooth',block:'nearest'}),50);
-}
-
-// RHYTHM DAYS
-function toggleDay(dayEl){
-  const acts=dayEl.querySelector('.rhythm-day-activities');
-  const hint=dayEl.querySelector('.rhythm-expand-hint');
-  const isOpen=acts.classList.contains('open');
-  acts.classList.toggle('open',!isOpen);
-  hint.textContent=isOpen?'Tap to expand':'Tap to close';
-}
-
-// SCHEDULE TABS
-function switchSched(btn,panelId){
-  document.querySelectorAll('.sched-tab').forEach(t=>t.classList.remove('active'));
-  document.querySelectorAll('.sched-panel').forEach(p=>p.classList.remove('active'));
-  btn.classList.add('active');
-  document.getElementById(panelId).classList.add('active');
-}
-
-// PITCH TABS
-function switchPitch(btn,panelId){
-  document.querySelectorAll('.pitch-tab').forEach(t=>t.classList.remove('active'));
-  document.querySelectorAll('.pitch-panel').forEach(p=>p.classList.remove('active'));
-  btn.classList.add('active');
-  document.getElementById(panelId).classList.add('active');
-}
-
-// CALCULATOR
-const TOGGLE={portfolio:true,folio:true,websites:true,brokered:false};
-document.querySelectorAll('.calc-toggle-check').forEach(check=>{
-  check.addEventListener('click',function(){
-    const t=this.getAttribute('data-title');
-    TOGGLE[t]=!TOGGLE[t];
-    this.classList.toggle('checked',TOGGLE[t]);
-    updateCalc();
+  // RHYTHM DAYS
+  document.querySelectorAll('.rhythm-day').forEach(function(dayEl) {
+    dayEl.addEventListener('click', function() {
+      var acts = dayEl.querySelector('.rhythm-day-activities');
+      var hint = dayEl.querySelector('.rhythm-expand-hint');
+      if (!acts) return;
+      var isOpen = acts.classList.contains('open');
+      acts.classList.toggle('open', !isOpen);
+      if (hint) hint.textContent = isOpen ? 'Tap to expand' : 'Tap to close';
+    });
   });
-});
-function fmt(n){return'$'+Math.round(n).toLocaleString('en-CA');}
-function updateCalc(){
-  const pc=parseInt(document.getElementById('port-closes').value);
-  const fc=parseInt(document.getElementById('folio-closes').value);
-  const ws=parseInt(document.getElementById('web-stories').value);
-  const bp=parseInt(document.getElementById('broker-places').value);
-  const se=parseInt(document.getElementById('special-eds').value);
-  document.getElementById('port-val').textContent=pc;
-  document.getElementById('folio-val').textContent=fc;
-  document.getElementById('web-val').textContent=ws;
-  document.getElementById('broker-val').textContent=bp;
-  document.getElementById('special-val').textContent=se;
-  const portC=TOGGLE.portfolio?pc*2500*0.30:0;
-  const folioC=TOGGLE.folio?fc*1500*0.30:0;
-  const webC=TOGGLE.websites?ws*750*0.30:0;
-  const brokerC=TOGGLE.brokered?bp*250:0;
-  const specialC=(se*21250*0.30)/12;
-  const monthly=portC+folioC+webC+brokerC+specialC;
-  document.getElementById('r-portfolio').textContent=fmt(portC);
-  document.getElementById('r-folio').textContent=fmt(folioC);
-  document.getElementById('r-websites').textContent=fmt(webC);
-  document.getElementById('r-brokered').textContent=fmt(brokerC
+
+  // SCHEDULE TABS
+  document.querySelectorAll('.sched-tab').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var panelId = btn.getAttribute('data-panel');
+      document.querySelectorAll('.sched-tab').forEach(function(t) { t.classList.remove('active'); });
+      document.querySelectorAll('.sched-panel').forEach(function(p) { p.classList.remove('active'); });
+      btn.classList.add('active');
+      var panel = document.getElementById(panelId);
+      if (panel) panel.classList.add('active');
+    });
+  });
+
+  // PITCH TABS
+  document.querySelectorAll('.pitch-tab').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var panelId = btn.getAttribute('data-panel');
+      document.querySelectorAll('.pitch-tab').forEach(function(t) { t.classList.remove('active'); });
+      document.querySelectorAll('.pitch-panel').forEach(function(p) { p.classList.remove('active'); });
+      btn.classList.add('active');
+      var panel = document.getElementById(panelId);
+      if (panel) panel.classList.add('active');
+    });
+  });
+
+  // CALCULATOR
+  var TOGGLE = { portfolio: true, folio: true, websites: true, brokered: false };
+
+  document.querySelectorAll('.calc-toggle-check').forEach(function(check) {
+    check.addEventListener('click', function() {
+      var t = check.getAttribute('data-title');
+      TOGGLE[t] = !TOGGLE[t];
+      check.classList.toggle('checked', TOGGLE[t]);
+      updateCalc();
+    });
+  });
+
+  ['port-closes','folio-closes','web-stories','broker-places','special-eds'].forEach(function(id) {
+    var el = document.getElementById(id);
+    if (el) el.addEventListener('input', updateCalc);
+  });
+
+  function fmt(n) {
+    return '$' + Math.round(n).toLocaleString('en-CA');
+  }
+
+  function updateCalc() {
+    var pc = parseInt(document.getElementById('port-closes').value) || 0;
+    var fc = parseInt(document.getElementById('folio-closes').value) || 0;
+    var ws = parseInt(document.getElementById('web-stories').value) || 0;
+    var bp = parseInt(document.getElementById('broker-places').value) || 0;
+    var se = parseInt(document.getElementById('special-eds').value) || 0;
+    document.getElementById('port-val').textContent = pc;
+    document.getElementById('folio-val').textContent = fc;
+    document.getElementById('web-val').textContent = ws;
+    document.getElementById('broker-val').textContent = bp;
+    document.getElementById('special-val').textContent = se;
+    var portC    = TOGGLE.portfolio ? pc * 2500 * 0.30 : 0;
+    var folioC   = TOGGLE.folio     ? fc * 1500 * 0.30 : 0;
+    var webC     = TOGGLE.websites  ? ws * 750  * 0.30 : 0;
+    var brokerC  = TOGGLE.brokered  ? bp * 250         : 0;
+    var specialC = (se * 21250 * 0.30) / 12;
+    var monthly  = portC + folioC + webC + brokerC + specialC;
+    document.getElementById('r-portfolio').textContent = fmt(portC);
+    document.getElementById('r-folio').textContent     = fmt(folioC);
+    document.getElementById('r-websites').textContent  = fmt(webC);
+    document.getElementById('r-brokered').textContent  = fmt(brokerC);
+    document.getElementById('r-special').textContent   = fmt(specialC);
+    document.getElementById('r-monthly').textContent   = fmt(monthly);
+    document.getElementById('r-annual').textContent    = fmt(monthly * 12);
+  }
+
+  updateCalc();
+
+}); // end DOMContentLoaded
+</script>
+</body>
+</html>
